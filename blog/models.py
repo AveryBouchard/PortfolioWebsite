@@ -5,4 +5,4 @@ class Blog(models.Model):
     title = models.CharField(max_length=30)
     pub_date = models.DateField()
     image = models.ImageField(upload_to='images/')
-    body = models.CharField(max_length=500)
+    body = models.TextField()
