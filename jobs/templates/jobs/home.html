@@ -15,16 +15,6 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <!-- Favicons -->
-<!--  <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">-->
-<!--  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">-->
-<!--  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">-->
-<!--  <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">-->
-<!--  <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">-->
-<!--  <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">-->
-<!--  <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">-->
-<!--  <meta name="theme-color" content="#563d7c">-->
-
 
   <style>
       .bd-placeholder-img {
@@ -48,23 +38,23 @@
 <body>
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Avery Bouchard</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Avery Bouchard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>-->
+<!--        </li>-->
         <li class="nav-item">
           <a class="nav-link" href="{% static 'avery-bouchard.pdf' %}">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Instagram</a>
+          <a class="nav-link" href="https://www.instagram.com/avbouch/?hl=en">Instagram</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
         </li>
 <!--        <li class="nav-item dropdown">-->
 <!--          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
@@ -91,7 +81,7 @@
       <p>
         <a href="mailto:averybou@gmail.com" class="btn btn-primary my-2">Contact Me</a>
       </p>
-      <img src="{% static 'avery.jpg' %}" height="300" />
+      <img src="{% static 'IMG_9699.jpg' %}" height="500"/>
     </div>
   </section>
 
